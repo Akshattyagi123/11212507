@@ -5,7 +5,7 @@ const { fetchProducts } = require('../services/ecommerceService');
 const getProducts = async (req, res) => {
     const { companyname, categoryname } = req.params;
     const { top, minPrice, maxPrice } = req.query;
-   
+
     try {
         const products = await fetchProducts(companyname, categoryname, top, minPrice, maxPrice);
         console.log(products)
