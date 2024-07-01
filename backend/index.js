@@ -3,7 +3,6 @@ const productsRoutes = require('./routes/productsRoutes');
 
 const app = express();
 
-// Register products routes
 app.use('/api', productsRoutes);
 
 const PORT = process.env.PORT || 3000;
